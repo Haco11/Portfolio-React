@@ -5,9 +5,25 @@
   list-style: none;
   text-decoration: none;
   outline: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+img {
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 7rem 1rem 0 1rem;
+  }
+}
+.container {
+  max-width: 1224px;
+  min-height: 100vh;
+  padding: 7rem 1.5rem 0 1.5rem;
+  margin: 0 auto;
 }
 
 body {
