@@ -1,4 +1,3 @@
-import "./App.css";
 import Nav from "./component/Nav/Nav";
 import About from "./component/About/About";
 import Portfolio from "./component/Portfolio/Portfolio";

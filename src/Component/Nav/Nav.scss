@@ -1,3 +1,5 @@
+@import "../../style/globals.scss";
+
 .header {
   position: fixed;
   width: 100%;
@@ -18,7 +20,7 @@
     margin-left: auto;
     margin-right: auto;
     .logo {
-      background-color: white;
+      background-color: $white;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -36,7 +38,7 @@
         margin-left: 3rem;
         a {
           text-decoration: none;
-          color: white;
+          color: $white;
           text-transform: uppercase;
           font-size: 0.85rem;
           opacity: 0.6;
@@ -56,7 +58,7 @@
       div {
         margin-left: 1rem;
         svg {
-          color: white;
+          color: $white;
           opacity: 0.6;
           cursor: pointer;
           transition: 0.5s;
@@ -67,7 +69,7 @@
       }
     }
     .menu {
-      background-color: white;
+      background-color: $white;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -90,7 +92,7 @@
       }
     }
     .closeMenu {
-      background: #000;
+      background: $black;
       width: 4rem;
       height: 4rem;
       position: fixed;
@@ -99,7 +101,7 @@
       top: 0;
     }
     .menuX {
-      color: #fff;
+      color: $white;
       position: fixed;
       top: 2rem;
       left: 0;
@@ -123,7 +125,7 @@
         a {
           text-decoration: none;
           text-transform: uppercase;
-          color: #fff;
+          color: $white;
           font-size: 1.5rem;
           opacity: 0.6;
           transition: all 0.3s ease;
