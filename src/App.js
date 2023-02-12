@@ -9,7 +9,6 @@ function App() {
     <>
       <Nav />
       <Home />
-
       <About />
       <Portfolio />
       <Contact />

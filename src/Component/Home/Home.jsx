@@ -13,9 +13,9 @@ const Home = () => {
         </h3>
         <span className="job">Web Developer</span>
         <span className="text">
-          Passionate <br /> Webdeveloper
+          Passionated <br /> Web Developer
         </span>
-        <a href="contact">Connect with me</a>
+        <a href="contact">Connect With Me</a>
       </div>
     </div>
   );
