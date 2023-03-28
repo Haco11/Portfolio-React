@@ -1,15 +1,42 @@
 import React from "react";
 import "./About.scss";
+import Pf from "../../assets/Haci.jpg";
+import { bios } from "../../data";
 const About = () => {
   return (
-    <div>
-      <h1>Lorem ipsum</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quos
-        impedit cumque optio qui nemo est exercitationem. Totam enim quos omnis
-        cupiditate excepturi? Officiis officia, eveniet rerum earum labore
-        perspiciatis.
-      </p>
+    <div className="container" id="about">
+      <div className="title">
+        <span>Who Am I?</span>
+        <h2>About me</h2>
+      </div>
+      <div className="about_container">
+        <div className="about_left">
+          <img src={Pf} alt="Profile-Picture" />
+        </div>
+        <div className="about_right">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            consequatur nesciunt reprehenderit quam dolores a, incidunt
+            temporibus dolorum voluptatem fugiat delectus, labore consectetur
+            debitis consequuntur.
+          </p>
+
+          {bios.map((bio) => {
+            return (
+              <div className="bio" key={bio.id}>
+                <span className="bioKey">
+                  {bio.icon}
+                  {bio.key}
+                  <span className="bioValue">{bio.value}</span>
+                </span>
+              </div>
+            );
+          })}
+          <a href="#" download="">
+            Download Resume
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

@@ -32,3 +32,20 @@ body {
   background-image: url(./assets/cubes.png);
   background-color: $backgroundColor;
 }
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.title span {
+  color: $cyan;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+.title h2 {
+  color: $white;
+  font-size: 3rem;
+  position: relative;
+}
