@@ -1,6 +1,8 @@
 import React from "react";
 import Pf from "../../assets/Haci.jpg";
 import "./Home.scss";
+import { motion } from "framer-motion";
+
 const Home = () => {
   return (
     <div className="container" id="home">
@@ -15,7 +17,13 @@ const Home = () => {
         <span className="text">
           Passionated <br /> Web Developer
         </span>
-        <a href="contact">Connect With Me</a>
+        <motion.a
+          href="contact"
+          download=""
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}>
+          Connect With Me
+        </motion.a>
       </div>
     </div>
   );

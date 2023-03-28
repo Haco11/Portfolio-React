@@ -1,14 +1,29 @@
 import {
+  FaCss3,
+  FaFigma,
   FaGithub,
+  FaHtml5,
   FaLinkedin,
+  FaNodeJs,
   FaPaperPlane,
   FaPhoneAlt,
+  FaReact,
+  FaSass,
   FaUser,
 } from "react-icons/fa";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
 export const socialIcons = [<FaLinkedin />, <FaGithub />];
+
+export const icons = [
+  <FaHtml5 />,
+  <FaCss3 />,
+  <FaReact />,
+  <FaNodeJs />,
+  <FaSass />,
+  <FaFigma />,
+];
 
 export const bios = [
   {

@@ -2,6 +2,8 @@ import React from "react";
 import "./About.scss";
 import Pf from "../../assets/Haci.jpg";
 import { bios } from "../../data";
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <div className="container" id="about">
@@ -11,7 +13,7 @@ const About = () => {
       </div>
       <div className="about_container">
         <div className="about_left">
-          <img src={Pf} alt="Profile-Picture" />
+          <img src={Pf} alt="Img" />
         </div>
         <div className="about_right">
           <p>
@@ -32,9 +34,13 @@ const About = () => {
               </div>
             );
           })}
-          <a href="#" download="">
+          <motion.a
+            href="#"
+            download=""
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}>
             Download Resume
-          </a>
+          </motion.a>
         </div>
       </div>
     </div>
