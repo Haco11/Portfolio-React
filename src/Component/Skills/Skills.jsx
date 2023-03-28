@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Skills.scss";
 import { icons } from "../../data";
-
+import { experiences } from "../../data";
 export const Skills = () => {
   const [active, setActive] = useState(1);
 
@@ -33,6 +33,20 @@ export const Skills = () => {
             return (
               <div className="icon" key={index}>
                 {icon}
+              </div>
+            );
+          })}
+      </div>
+      <div className="experiencs">
+        {active === 2 &&
+          experiences.map((exper) => {
+            return (
+              <div className="experience" key={exper.id}>
+                <span>{exper.year}</span>
+                <div className="position">
+                  <h3>{exper.position}</h3>
+                  <p>{exper.company}</p>
+                </div>
               </div>
             );
           })}
