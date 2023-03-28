@@ -27,6 +27,16 @@ export const Skills = () => {
           Experience
         </button>
       </div>
+      <div className="skills">
+        {active === 1 &&
+          icons.map((icon, index) => {
+            return (
+              <div className="icon" key={index}>
+                {icon}
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
 };
