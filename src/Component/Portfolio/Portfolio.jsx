@@ -24,15 +24,16 @@ const Portfolio = () => {
                   href={work.github}
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}>
+                  transition={{ duration: 0.3 }}
+                  target="_blank">
                   <FiGithub />
                 </motion.a>
                 <motion.a
                   href={work.live}
                   whileInView={{ scale: [0, 1] }}
                   whileHover={{ scale: [1, 1.1] }}
-                  transition={{ duration: 0.3 }}>
-                  {" "}
+                  transition={{ duration: 0.3 }}
+                  target="_blank">
                   <FiEye />
                 </motion.a>
               </motion.div>
