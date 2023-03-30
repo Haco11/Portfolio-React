@@ -8,16 +8,16 @@ const Contact = () => {
         <h2>Contact Me</h2>
       </div>
       <div className="contact_form">
-        <h3>Hust Say Hi!</h3>
+        <h3>Just Say Hi!</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
           cumque labore enim reiciendis placeat beatae nihil, inventore quia,
           asperiores libero expedita, aut doloremque quis? Labore provident
           sequi officiis assumenda doloribus?
         </p>
-        <div>
+        <div className="contact_info">
           <div>
-            <h3>address</h3>
+            <h3>Address</h3>
             <p>Sweden,Stockholm</p>
           </div>
           <div>
