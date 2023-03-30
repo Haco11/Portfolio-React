@@ -1,0 +1,140 @@
+@import "../../style/globals.scss";
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  &.active {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  .nav_container {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    .logo {
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav_links {
+      display: flex;
+      list-style: none;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+      li {
+        margin-left: 3rem;
+        a {
+          text-decoration: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 0.85rem;
+          opacity: 0.6;
+          transition: 0.5s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .social_icon {
+      display: flex;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+
+      div {
+        margin-left: 1rem;
+        svg {
+          color: $white;
+          opacity: 0.6;
+          font-size: 1.25rem;
+          cursor: pointer;
+          transition: 0.5s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .menu {
+      background-color: $white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      display: none;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      svg {
+        width: 70%;
+        height: 70%;
+      }
+    }
+    .closeMenu {
+      background: $black;
+      width: 4rem;
+      height: 4rem;
+      position: fixed;
+      border-radius: 50%;
+      right: 0;
+      top: 0;
+    }
+    .menuX {
+      color: $white;
+      position: fixed;
+      top: 2rem;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      svg {
+        cursor: pointer;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+      }
+      li {
+        list-style: none;
+        margin-top: 1rem;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: $white;
+          font-size: 1.5rem;
+          opacity: 0.6;
+          transition: all 0.3s ease;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
