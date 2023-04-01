@@ -10,6 +10,8 @@ import {
   FaReact,
   FaSass,
   FaUser,
+  FaPhp,
+  FaWordpress,
 } from "react-icons/fa";
 
 import work1 from "./assets/work1.png";
@@ -20,6 +22,8 @@ export const socialIcons = [<FaLinkedin />, <FaGithub />];
 
 export const icons = [
   <FaHtml5 />,
+  <FaPhp />,
+  <FaWordpress />,
   <FaCss3 />,
   <FaReact />,
   <FaNodeJs />,
