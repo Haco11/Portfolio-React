@@ -12,8 +12,8 @@
 
   .about_left {
     background: $cyan;
-    max-width: 350px;
-    height: 350px;
+    max-width: 450px;
+    height: 450px;
     justify-self: center;
     border-radius: 5px;
     box-shadow: 0 0 20px $cyan;
@@ -36,14 +36,14 @@
     }
 
     p {
-      font-size: 0.85rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
       max-width: 450px;
     }
     .bio {
       display: flex;
-      font-size: 0.85rem;
-      max-width: 200px;
+      font-size: 1rem;
+      max-width: 220px;
       margin-bottom: 1rem;
 
       .bioKey {
