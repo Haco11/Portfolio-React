@@ -10,8 +10,8 @@ function App() {
     <>
       <Nav />
       <Home />
-      <About />
       <Skills />
+      <About />
       <Portfolio />
       <Contact />
       <Footer />

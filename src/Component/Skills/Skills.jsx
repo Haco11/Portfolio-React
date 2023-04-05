@@ -29,10 +29,11 @@ export const Skills = () => {
       </div>
       <div className="skills">
         {active === 1 &&
-          icons.map((icon, index) => {
+          icons.map((icon) => {
             return (
-              <div className="icon" key={index}>
-                {icon}
+              <div className="icon" key={icon.id}>
+                {icon.icon}
+                {icon.title}
               </div>
             );
           })}

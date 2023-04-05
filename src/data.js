@@ -21,14 +21,46 @@ export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 export const socialIcons = [<FaLinkedin />, <FaGithub />];
 
 export const icons = [
-  <FaHtml5 />,
-  <FaPhp />,
-  <FaWordpress />,
-  <FaCss3 />,
-  <FaReact />,
-  <FaNodeJs />,
-  <FaSass />,
-  <FaFigma />,
+  {
+    id: 1,
+    icon: <FaHtml5 />,
+    title: "HTML",
+  },
+  {
+    id: 2,
+    icon: <FaPhp />,
+    title: "Php",
+  },
+  {
+    id: 3,
+    icon: <FaWordpress />,
+    title: "Wordpress",
+  },
+  {
+    id: 4,
+    icon: <FaCss3 />,
+    title: "CSS",
+  },
+  {
+    id: 5,
+    icon: <FaReact />,
+    title: "React",
+  },
+  {
+    id: 6,
+    icon: <FaNodeJs />,
+    title: "NodeJs",
+  },
+  {
+    id: 7,
+    icon: <FaSass />,
+    title: "Sass",
+  },
+  {
+    id: 8,
+    icon: <FaFigma />,
+    title: "Figma",
+  },
 ];
 
 export const bios = [
