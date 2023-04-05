@@ -7,15 +7,26 @@ import resume from "../../assets/Haci_Cömert_CV.pdf";
 const About = () => {
   return (
     <div className="container" id="about">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="title">
         <span>Who Am I?</span>
         <h2>About me</h2>
-      </div>
+      </motion.div>
       <div className="about_container">
-        <div className="about_left">
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [-250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="about_left">
           <img src={Pf} alt="Img" />
-        </div>
-        <div className="about_right">
+        </motion.div>
+        <motion.div
+          initial={{ x: 0, opacity: 0 }}
+          whileInView={{ x: [250, 0], opacity: 1 }}
+          transition={{ duration: 1 }}
+          className="about_right">
           <p>
             As a full-stack developer with a wealth of experience in web
             development, I possess a diverse skill set across various
@@ -44,7 +55,7 @@ const About = () => {
             transition={{ duration: 0.3 }}>
             Download Resume
           </motion.a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,13 +1,22 @@
 import React from "react";
 import "./Contact.scss";
+import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
     <div className="contact" id="contact">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="title">
         <span>Get In Touch</span>
         <h2>Contact Me</h2>
-      </div>
-      <div className="contact_form">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-100, 0], opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="contact_form">
         <h3>Just Say Hi!</h3>
         <p>
           If you're interested in learning more about my work or collaborating
@@ -29,7 +38,7 @@ const Contact = () => {
             <p>+46 72 448 27 91</p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

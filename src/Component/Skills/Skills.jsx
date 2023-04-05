@@ -2,16 +2,25 @@ import React, { useState } from "react";
 import "./Skills.scss";
 import { icons } from "../../data";
 import { experiences } from "../../data";
+import { motion } from "framer-motion";
+
 export const Skills = () => {
   const [active, setActive] = useState(1);
 
   return (
     <div className="container" id="skills">
-      <div className="title">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="title">
         <span>What I Expert</span>
         <h2>Skills And Experience</h2>
-      </div>
-      <div className="select">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="select">
         <button
           onClick={() => {
             setActive(1);
@@ -26,8 +35,11 @@ export const Skills = () => {
           className={active === 2 ? "active" : ""}>
           Experience
         </button>
-      </div>
-      <div className="skills">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="skills">
         {active === 1 &&
           icons.map((icon) => {
             return (
@@ -37,8 +49,11 @@ export const Skills = () => {
               </div>
             );
           })}
-      </div>
-      <div className="experiencs">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ y: [-50, 0], opacity: 1 }}
+        className="experiencs">
         {active === 2 &&
           experiences.map((exper) => {
             return (
@@ -51,7 +66,7 @@ export const Skills = () => {
               </div>
             );
           })}
-      </div>
+      </motion.div>
     </div>
   );
 };
