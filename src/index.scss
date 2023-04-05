@@ -49,3 +49,26 @@ body {
   font-size: 3.25rem;
   position: relative;
 }
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ffffff40;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff40;
+}
+
+*::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff60;
+}
