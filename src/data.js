@@ -16,7 +16,7 @@ import {
 
 import work1 from "./assets/work1.png";
 
-export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
+export const navLinks = ["home", "skills", "about", "portfolio", "contact"];
 
 export const socialIcons = [<FaLinkedin />, <FaGithub />];
 
