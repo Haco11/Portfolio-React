@@ -3,7 +3,7 @@ import "./About.scss";
 import Pf from "../../assets/Haci.jpg";
 import { bios } from "../../data";
 import { motion } from "framer-motion";
-
+import resume from "../../assets/Haci_Cömert_CV.pdf";
 const About = () => {
   return (
     <div className="container" id="about">
@@ -17,10 +17,13 @@ const About = () => {
         </div>
         <div className="about_right">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            consequatur nesciunt reprehenderit quam dolores a, incidunt
-            temporibus dolorum voluptatem fugiat delectus, labore consectetur
-            debitis consequuntur.
+            As a full-stack developer with a wealth of experience in web
+            development, I possess a diverse skill set across various
+            technologies and platforms, ranging from front-end to back-end and
+            databases. Additionally, I have a proven track record of quickly
+            learning new technologies, enabling me to create high-quality and
+            innovative solutions that meet your specific requirements and exceed
+            your expectations.
           </p>
 
           {bios.map((bio) => {
@@ -35,8 +38,8 @@ const About = () => {
             );
           })}
           <motion.a
-            href="#"
-            download=""
+            href={resume}
+            download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}>
             Download Resume

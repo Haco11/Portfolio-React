@@ -10,10 +10,10 @@ const Contact = () => {
       <div className="contact_form">
         <h3>Just Say Hi!</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
-          cumque labore enim reiciendis placeat beatae nihil, inventore quia,
-          asperiores libero expedita, aut doloremque quis? Labore provident
-          sequi officiis assumenda doloribus?
+          If you're interested in learning more about my work or collaborating
+          on a project, please don't hesitate to get in touch with me. You can
+          reach me via email or phone, and I'll be happy to discuss how I can
+          help bring your ideas to life.
         </p>
         <div className="contact_info">
           <div>
