@@ -1,0 +1,50 @@
+@import "../../style/globals.scss";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
+  column-gap: 2rem;
+
+  .copyRight {
+    p {
+      span {
+        color: $cyan;
+        font-weight: 800;
+      }
+    }
+  }
+  .followMe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h4 {
+      font-size: 0.85rem;
+    }
+    .stick {
+      height: 2px;
+      width: 3rem;
+      background: $cyan;
+    }
+
+    .social_icons {
+      display: flex;
+      gap: 0.5rem;
+
+      svg {
+        opacity: 0.7;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

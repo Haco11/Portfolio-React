@@ -18,8 +18,7 @@ const Home = () => {
           Passionated <br /> Web Developer
         </span>
         <motion.a
-          href="contact"
-          download=""
+          href="#contact"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}>
           Connect With Me
