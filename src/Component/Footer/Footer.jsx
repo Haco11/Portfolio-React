@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="copyRight">
         <p>
-          Copyright&copy;2023 All rights reserved| Made by
+          Copyright&copy;2023 All rights reserved | Made by
           <span> Haci Cömert</span>
         </p>
       </div>
