@@ -2,6 +2,7 @@ import React from "react";
 import Pf from "../../assets/Haci.jpg";
 import "./Home.scss";
 import { motion } from "framer-motion";
+import LazyLoad from "react-lazy-load";
 
 const Home = () => {
   const moveVariants = {
@@ -23,7 +24,9 @@ const Home = () => {
       className="container"
       id="home">
       <div className="profile">
-        <img src={Pf} alt="profile" />
+        <LazyLoad height={200}>
+          <img src={Pf} alt="profile" />
+        </LazyLoad>
       </div>
       <div className="profile_text">
         <h3 className="name">
