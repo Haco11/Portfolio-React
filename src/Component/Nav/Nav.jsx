@@ -87,7 +87,9 @@ const Nav = () => {
             {navLinks.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={`${item}`}>{item}</a>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
                 </li>
               );
             })}

@@ -24,7 +24,7 @@ const Home = () => {
       className="container"
       id="home">
       <div className="profile">
-        <LazyLoad height={200}>
+        <LazyLoad height={250}>
           <img src={Pf} alt="profile" />
         </LazyLoad>
       </div>
