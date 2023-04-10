@@ -5,9 +5,9 @@
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   position: relative;
-
   @media screen and (max-width: 700px) {
     grid-template-columns: 1fr;
+    margin-bottom: 7rem;
   }
 
   .about_left {
