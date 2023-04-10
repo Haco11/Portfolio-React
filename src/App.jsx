@@ -11,8 +11,8 @@ function App() {
       <Nav />
       <Home />
       <Skills />
-      <About />
       <Portfolio />
+      <About />
       <Contact />
       <Footer />
     </>
