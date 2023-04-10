@@ -3,6 +3,8 @@ import "./Portfolio.scss";
 import { workImages } from "../../data";
 import { FiEye, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 const Portfolio = () => {
   return (
     <div className="container" id="portfolio">
@@ -20,8 +22,8 @@ const Portfolio = () => {
         className="workImages">
         {workImages.map((work) => {
           return (
-            <div className="workImage">
-              <img src={work.img} alt="work" />
+            <div className="workImage" key={work.id}>
+              <LazyLoadImage src={work.img} alt="work" />
               <motion.div
                 initial={{ opacity: 0 }}
                 whileHover={{ opacity: [0, 1] }}

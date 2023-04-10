@@ -1,9 +1,11 @@
 import React from "react";
 import Pf from "../../assets/Haci.jpg";
+import W from "../../assets/work1.png";
+
 import "./Home.scss";
 import { motion } from "framer-motion";
-import LazyLoad from "react-lazy-load";
-
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "../../effect/black-and-white.css";
 const Home = () => {
   const moveVariants = {
     animation: {
@@ -24,9 +26,14 @@ const Home = () => {
       className="container"
       id="home">
       <div className="profile">
-        <LazyLoad height={250}>
-          <img src={Pf} alt="profile" />
-        </LazyLoad>
+        <LazyLoadImage
+          alt="profile"
+          height={350}
+          width={350}
+          effect="black-and-white"
+          src={Pf}
+          placeholderSrc={W}
+        />
       </div>
       <div className="profile_text">
         <h3 className="name">
