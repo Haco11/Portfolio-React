@@ -13,8 +13,11 @@ import {
   FaPhp,
   FaWordpress,
 } from "react-icons/fa";
-
 import work1 from "./assets/work1.png";
+import work2 from "./assets/work2.jpg";
+import work3 from "./assets/work3.jpg";
+import work4 from "./assets/work4.jpg";
+import work5 from "./assets/work5.png";
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
@@ -108,44 +111,30 @@ export const experiences = [
 export const workImages = [
   {
     id: 1,
-    img: work1,
+    img: work3,
     name: "project 1",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
+    github: "https://github.com/Rikard-Johansson97/sortVisualizer",
+    live: "https://resonant-sherbet-9c964f.netlify.app/",
   },
   {
     id: 2,
-    img: work1,
+    img: work4,
     name: "project 2",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
+    github: "https://github.com/Rikard-Johansson97/airbnb",
+    live: "https://airbnb-jet-nine.vercel.app/",
   },
   {
     id: 3,
-    img: work1,
+    img: work2,
     name: "project 3",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
+    github: "https://github.com/Haco11/kanban-board",
+    live: "https://leafy-sfogliatella-119c4d.netlify.app/",
   },
   {
     id: 4,
-    img: work1,
+    img: work5,
     name: "project 4",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
-  },
-  {
-    id: 5,
-    img: work1,
-    name: "project 5",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
-  },
-  {
-    id: 6,
-    img: work1,
-    name: "project 6",
-    github: "www.facebook.com",
-    live: "www.facebook.com",
+    github: "https://github.com/Haco11/spotify-clone",
+    live: "",
   },
 ];
