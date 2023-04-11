@@ -27,7 +27,7 @@ const Portfolio = () => {
                 <LazyLoadImage src={work.img} alt="work" />
                 <motion.div
                   initial={{ opacity: 0 }}
-                  whileHover={{ opacity: [0, 1] }}
+                  whileHover={{ opacity: [0, 0.85] }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="hoverLayer">
                   <motion.a
