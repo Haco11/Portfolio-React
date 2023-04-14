@@ -13,6 +13,7 @@ import {
   FaPhp,
   FaWordpress,
 } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.jpg";
 import work3 from "./assets/work3.jpg";
@@ -63,6 +64,11 @@ export const icons = [
     id: 8,
     icon: <FaFigma />,
     title: "Figma",
+  },
+  {
+    id: 9,
+    icon: <TbBrandNextjs />,
+    title: "NextJs",
   },
 ];
 
