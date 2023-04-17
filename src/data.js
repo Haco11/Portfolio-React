@@ -13,7 +13,9 @@ import {
   FaPhp,
   FaWordpress,
 } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandGit, TbBrandRedux } from "react-icons/tb";
+import { TbBrandMongodb } from "react-icons/tb";
+
 import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.jpg";
 import work3 from "./assets/work3.jpg";
@@ -69,6 +71,21 @@ export const icons = [
     id: 9,
     icon: <TbBrandNextjs />,
     title: "NextJs",
+  },
+  {
+    id: 10,
+    icon: <TbBrandGit />,
+    title: "Git",
+  },
+  {
+    id: 11,
+    icon: <TbBrandRedux />,
+    title: "Redux",
+  },
+  {
+    id: 11,
+    icon: <TbBrandMongodb />,
+    title: "MongoDb",
   },
 ];
 
