@@ -13,10 +13,13 @@ import {
   FaPhp,
   FaWordpress,
 } from "react-icons/fa";
-import { TbBrandNextjs, TbBrandGit, TbBrandRedux } from "react-icons/tb";
-import { TbBrandMongodb } from "react-icons/tb";
+import {
+  TbBrandNextjs,
+  TbBrandGit,
+  TbBrandRedux,
+  TbBrandMongodb,
+} from "react-icons/tb";
 
-import work1 from "./assets/work1.png";
 import work2 from "./assets/work2.jpg";
 import work3 from "./assets/work3.jpg";
 import work4 from "./assets/work4.jpg";
@@ -29,33 +32,33 @@ export const socialIcons = [<FaLinkedin />, <FaGithub />];
 export const icons = [
   {
     id: 1,
-    icon: <FaHtml5 />,
-    title: "HTML",
-  },
-  {
-    id: 2,
-    icon: <FaPhp />,
-    title: "Php",
-  },
-  {
-    id: 3,
-    icon: <FaWordpress />,
-    title: "Wordpress",
-  },
-  {
-    id: 4,
-    icon: <FaCss3 />,
-    title: "CSS",
-  },
-  {
-    id: 5,
     icon: <FaReact />,
     title: "React",
   },
   {
-    id: 6,
+    id: 2,
     icon: <FaNodeJs />,
     title: "NodeJs",
+  },
+  {
+    id: 3,
+    icon: <FaPhp />,
+    title: "Php",
+  },
+  {
+    id: 4,
+    icon: <FaWordpress />,
+    title: "Wordpress",
+  },
+  {
+    id: 5,
+    icon: <TbBrandNextjs />,
+    title: "NextJs",
+  },
+  {
+    id: 6,
+    icon: <TbBrandMongodb />,
+    title: "MongoDb",
   },
   {
     id: 7,
@@ -64,28 +67,28 @@ export const icons = [
   },
   {
     id: 8,
-    icon: <FaFigma />,
-    title: "Figma",
-  },
-  {
-    id: 9,
-    icon: <TbBrandNextjs />,
-    title: "NextJs",
-  },
-  {
-    id: 10,
-    icon: <TbBrandGit />,
-    title: "Git",
-  },
-  {
-    id: 11,
     icon: <TbBrandRedux />,
     title: "Redux",
   },
   {
+    id: 9,
+    icon: <FaHtml5 />,
+    title: "HTML",
+  },
+  {
+    id: 10,
+    icon: <FaCss3 />,
+    title: "CSS",
+  },
+  {
     id: 11,
-    icon: <TbBrandMongodb />,
-    title: "MongoDb",
+    icon: <TbBrandGit />,
+    title: "Git",
+  },
+  {
+    id: 12,
+    icon: <FaFigma />,
+    title: "Figma",
   },
 ];
 
