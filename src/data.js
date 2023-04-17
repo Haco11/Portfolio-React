@@ -141,6 +141,7 @@ export const workImages = [
     name: "Sorting Visualizer",
     github: "https://github.com/Rikard-Johansson97/sortVisualizer",
     live: "https://resonant-sherbet-9c964f.netlify.app/",
+    tag: ["JavaScript", "HTML", "CSS"],
   },
   {
     id: 2,
@@ -148,6 +149,7 @@ export const workImages = [
     name: "Airbnb-Clone",
     github: "https://github.com/Rikard-Johansson97/airbnb",
     live: "https://airbnb-jet-nine.vercel.app/",
+    tag: ["React", "Sass", "Mongoose", "Express"],
   },
   {
     id: 3,
@@ -155,6 +157,7 @@ export const workImages = [
     name: "Kanban-Board",
     github: "https://github.com/Haco11/kanban-board",
     live: "https://leafy-sfogliatella-119c4d.netlify.app/",
+    tag: ["React", "Content Provider", "Drag and Drop"],
   },
   {
     id: 4,
@@ -162,5 +165,6 @@ export const workImages = [
     name: "Spotify-Clone",
     github: "https://github.com/Haco11/spotify-clone",
     live: "",
+    tag: ["React", "Redux", "Spotify API", "Material UI"],
   },
 ];
