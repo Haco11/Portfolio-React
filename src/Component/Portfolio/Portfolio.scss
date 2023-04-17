@@ -44,8 +44,16 @@
       display: flex;
       gap: 1.5rem;
       justify-content: center;
+      flex-direction: column;
       align-items: center;
-
+      &__icon {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+      &__title {
+        color: $white;
+      }
       a {
         width: 40px;
         height: 40px;

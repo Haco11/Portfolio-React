@@ -30,22 +30,25 @@ const Portfolio = () => {
                   whileHover={{ opacity: [0, 0.85] }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                   className="hoverLayer">
-                  <motion.a
-                    href={work.github}
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 1.1] }}
-                    transition={{ duration: 0.3 }}
-                    target="_blank">
-                    <FiGithub />
-                  </motion.a>
-                  <motion.a
-                    href={work.live}
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 1.1] }}
-                    transition={{ duration: 0.3 }}
-                    target="_blank">
-                    <FiEye />
-                  </motion.a>
+                  <div className="hoverLayer__icon">
+                    <motion.a
+                      href={work.github}
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 1.1] }}
+                      transition={{ duration: 0.3 }}
+                      target="_blank">
+                      <FiGithub />
+                    </motion.a>
+                    <motion.a
+                      href={work.live}
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 1.1] }}
+                      transition={{ duration: 0.3 }}
+                      target="_blank">
+                      <FiEye />
+                    </motion.a>
+                  </div>
+                  <h4 className="hoverLayer__title">{work.name}</h4>
                 </motion.div>
               </div>
             );
