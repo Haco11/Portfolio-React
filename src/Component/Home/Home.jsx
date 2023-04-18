@@ -6,6 +6,7 @@ import "./Home.scss";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "../../effect/black-and-white.scss";
+
 const Home = () => {
   const moveVariants = {
     animation: {
