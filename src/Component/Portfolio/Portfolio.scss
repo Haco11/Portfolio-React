@@ -54,6 +54,24 @@
       &__title {
         color: $white;
       }
+      &__tags {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        .tag {
+          color: $white;
+          font-size: 0.75rem;
+          font-weight: bold;
+          display: flex;
+          padding: 0.5rem;
+          border-radius: 10px;
+          border: 2px solid $white;
+        }
+      }
       a {
         width: 40px;
         height: 40px;

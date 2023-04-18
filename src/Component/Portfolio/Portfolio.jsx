@@ -49,6 +49,11 @@ const Portfolio = () => {
                     </motion.a>
                   </div>
                   <h4 className="hoverLayer__title">{work.name}</h4>
+                  <div className="hoverLayer__tags">
+                    {work.tag.map((r, ind) => {
+                      return <span className="tag">{r}</span>;
+                    })}
+                  </div>
                 </motion.div>
               </div>
             );
