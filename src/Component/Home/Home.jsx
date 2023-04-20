@@ -24,7 +24,7 @@ const Home = () => {
       initial={{ y: -15, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 2, delay: 0.5 }}
-      className="container"
+      className="container-home"
       id="home">
       <div className="profile">
         <LazyLoadImage
@@ -41,9 +41,7 @@ const Home = () => {
           Hi, I'm <span>Haci Cömert</span>
         </h3>
         <span className="job">Web Developer</span>
-        <span className="text">
-          Passionated <br /> Web Developer
-        </span>
+
         <motion.a
           href="#contact"
           variants={moveVariants}

@@ -1,5 +1,7 @@
 @import "../../style/globals.scss";
-
+.container-home {
+  margin-top: 7rem;
+}
 #home {
   display: flex;
   flex-direction: column;

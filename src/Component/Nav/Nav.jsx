@@ -43,7 +43,7 @@ const Nav = () => {
   return (
     <motion.div
       initial={{ y: -25 }}
-      animate={{ y: -5 }}
+      animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={scroll ? "header active" : "header"}>
       <div className="nav_container">
