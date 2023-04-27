@@ -1,21 +1,26 @@
 import React from "react";
 import "./Contact.scss";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const Contact = () => {
+  const { scrollY } = useScroll();
+  const threshold = 600;
+  console.log(scrollY);
   return (
     <div className="contact" id="contact">
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
+        animate={{ opacity: 1 }}
+        whileInView={{ y: [-50, 0], opacity: scrollY >= threshold ? 0 : 1 }}
         className="title">
         <span>Get In Touch</span>
         <h2>Contact Me</h2>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-100, 0], opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
+        whileInView={{ y: [-50, 0], opacity: scrollY >= threshold ? 0 : 1 }}
         className="contact_form">
         <h3>Just Say Hi!</h3>
         <p>
