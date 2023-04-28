@@ -40,9 +40,7 @@ const Home = () => {
         <h3 className="name">
           Hi, I'm <span>Haci Cömert</span>
         </h3>
-        <span className="job">
-          Web Developer Based in Sweden &#127462 &#127485
-        </span>
+        <span className="job">Web Developer Based in Sweden 🇸🇪</span>
 
         <motion.a
           href="#contact"
