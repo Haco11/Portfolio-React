@@ -41,7 +41,7 @@ const Home = () => {
           Hi, I'm <span>Haci Cömert</span>
         </h3>
         <span className="job">
-          Web Developer Based in Sweden &#127480;&#127466;
+          Web Developer Based in Sweden &#127462 &#127485
         </span>
 
         <motion.a

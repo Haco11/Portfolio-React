@@ -1,5 +1,7 @@
 @import "../../style/globals.scss";
-
+.contact {
+  margin-top: 1rem;
+}
 .contact_form {
   background: $white;
   padding: 2rem;
@@ -7,7 +9,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-top: 1rem;
   border-radius: 15px;
   .contact_info {
     display: flex;
