@@ -16,7 +16,6 @@
 
   .workImage {
     max-width: 380px;
-    height: 250px;
     border-radius: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -24,10 +23,18 @@
     @media screen and (max-width: 600px) {
       max-width: 350px;
     }
-
+    .portfolio__info {
+      position: relative;
+      z-index: 200;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0.5rem;
+      width: 100%;
+    }
     img {
       width: 100%;
-      height: 100%;
+      height: 250px;
       object-fit: cover;
       border-radius: 1rem;
     }
@@ -53,6 +60,11 @@
       }
       &__title {
         color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 0.5rem;
       }
       &__tags {
         padding: 0.5rem;
