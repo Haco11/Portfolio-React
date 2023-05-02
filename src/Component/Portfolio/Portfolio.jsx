@@ -14,7 +14,7 @@ const Portfolio = () => {
           whileInView={{ y: [-50, 0], opacity: 1 }}
           className="title">
           <span>My Work</span>
-          <h2>Awsome Projects</h2>
+          <h2>Awesome Projects</h2>
         </motion.div>
         <motion.div
           initial={{ x: 0, opacity: 0 }}
