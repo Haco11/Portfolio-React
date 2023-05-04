@@ -1,5 +1,5 @@
 import React from "react";
-import Pf from "../../assets/Haci.jpg";
+import Pf from "../../assets/Haci.png";
 import W from "../../assets/work1.png";
 
 import "./Home.scss";

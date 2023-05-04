@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import Pf from "../../assets/Haci.jpg";
+import Pf from "../../assets/HaciL.jpg";
 import { bios } from "../../data";
 import { motion } from "framer-motion";
 import resume from "../../assets/Haci_Cömert_CV.pdf";
@@ -63,7 +63,7 @@ const About = () => {
             download
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}>
-            Download Resume
+            Download Cv
           </motion.a>
         </motion.div>
       </div>

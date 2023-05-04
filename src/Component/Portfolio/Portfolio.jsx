@@ -46,7 +46,7 @@ const Portfolio = () => {
                         target="_blank">
                         <FiGithub />
                       </motion.a>
-                      {!work.live === "" ? (
+                      {work.live === "" ? null : (
                         <motion.a
                           href={work.live}
                           whileInView={{ scale: [0, 1] }}
@@ -55,7 +55,7 @@ const Portfolio = () => {
                           target="_blank">
                           <FiEye />
                         </motion.a>
-                      ) : null}
+                      )}
                     </div>
                   </motion.div>
                   <div className="portfolio__info">
