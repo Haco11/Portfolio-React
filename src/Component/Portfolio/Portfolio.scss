@@ -23,6 +23,31 @@
     @media screen and (max-width: 600px) {
       max-width: 350px;
     }
+    &__title {
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    &__tags {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      .tag {
+        color: $white;
+        font-size: 0.75rem;
+        font-weight: bold;
+        display: flex;
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: 2px solid $white;
+      }
+    }
+
     .portfolio__info {
       position: relative;
       z-index: 200;
@@ -53,45 +78,24 @@
       justify-content: center;
       flex-direction: column;
       align-items: center;
+
       &__icon {
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        font-weight: 900;
       }
-      &__title {
-        color: $white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        padding: 0.5rem;
-      }
-      &__tags {
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        .tag {
-          color: $white;
-          font-size: 0.75rem;
-          font-weight: bold;
-          display: flex;
-          padding: 0.5rem;
-          border-radius: 10px;
-          border: 2px solid $white;
-        }
-      }
+
       a {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background: rgba(255, 255, 255, 0.25);
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        color: $white;
+
         svg {
           color: $white;
           font-size: 2rem;

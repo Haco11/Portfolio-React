@@ -51,8 +51,8 @@ const Portfolio = () => {
                     </div>
                   </motion.div>
                   <div className="portfolio__info">
-                    <h4 className="hoverLayer__title">{work.name}</h4>
-                    <div className="hoverLayer__tags">
+                    <h4 className="workImage__title">{work.name}</h4>
+                    <div className="workImage__tags">
                       {work.tag.map((r, ind) => {
                         return <span className="tag">{r}</span>;
                       })}
