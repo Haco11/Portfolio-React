@@ -4,6 +4,7 @@ import { workImages } from "../../data";
 import { FiEye, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import W from "../../assets/work1.png";
 
 const Portfolio = () => {
   return (
@@ -25,7 +26,12 @@ const Portfolio = () => {
             .map((work) => {
               return (
                 <div className="workImage" key={work.id}>
-                  <LazyLoadImage src={work.img} alt="work" />
+                  <LazyLoadImage
+                    src={work.img}
+                    alt="work"
+                    width={"100%"}
+                    placeholderSrc={W}
+                  />
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: [0, 0.85] }}
@@ -40,7 +46,7 @@ const Portfolio = () => {
                         target="_blank">
                         <FiGithub />
                       </motion.a>
-                      {!work.live == "" ? (
+                      {!work.live === "" ? (
                         <motion.a
                           href={work.live}
                           whileInView={{ scale: [0, 1] }}
