@@ -27,7 +27,16 @@ import work5 from "./assets/work5.png";
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
-export const socialIcons = [<FaLinkedin />, <FaGithub />];
+export const socialIcons = [
+  {
+    icon: <FaLinkedin />,
+    link: "https://www.linkedin.com/in/haci-c%C3%B6mert/",
+  },
+  {
+    icon: <FaGithub />,
+    link: "https://github.com/Haco11",
+  },
+];
 
 export const icons = [
   {

@@ -61,7 +61,11 @@ const Nav = () => {
         </ul>
         <div className="social_icon">
           {socialIcons.map((item, index) => {
-            return <div key={index}>{item}</div>;
+            return (
+              <a href={item.link} key={index} target="_blank">
+                {item.icon}
+              </a>
+            );
           })}
         </div>
         <div className="menu">
