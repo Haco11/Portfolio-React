@@ -21,7 +21,7 @@ import {
 } from "react-icons/tb";
 
 import work2 from "./assets/work2.jpg";
-import work3 from "./assets/work3.jpg";
+import work3 from "./assets/work3.1.png";
 import work4 from "./assets/work4.jpg";
 import work5 from "./assets/work5.png";
 

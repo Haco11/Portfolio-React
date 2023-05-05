@@ -15,14 +15,12 @@
   }
 
   .workImage {
-    max-width: 380px;
+    max-width: 290px;
     border-radius: 1rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    @media screen and (max-width: 600px) {
-      max-width: 350px;
-    }
+
     &__title {
       color: $white;
       display: flex;
