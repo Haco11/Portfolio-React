@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import Pf from "../../assets/HaciL.jpg";
+import Pf from "../../assets/Haci2.png";
 import { bios } from "../../data";
 import { motion } from "framer-motion";
 import resume from "../../assets/Haci_Cömert_CV.pdf";
@@ -25,15 +25,15 @@ const About = () => {
           className="about_left">
           <LazyLoadImage
             alt="profile"
-            height={450}
-            max-width={450}
+            height={550}
+            width={650}
             effect="black-and-white"
             src={Pf}
             placeholderSrc={W}
           />
         </motion.div>
         <motion.div
-          initial={{ x: 0, opacity: 0 }}
+          initial={{ x: -0, opacity: 0 }}
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
           className="about_right">
