@@ -25,8 +25,6 @@ const About = () => {
           className="about_left">
           <LazyLoadImage
             alt="profile"
-            height={550}
-            width={650}
             effect="black-and-white"
             src={Pf}
             placeholderSrc={W}
