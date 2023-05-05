@@ -9,7 +9,6 @@ import {
   FaPhoneAlt,
   FaReact,
   FaSass,
-  FaUser,
   FaPhp,
   FaWordpress,
 } from "react-icons/fa";
@@ -104,18 +103,12 @@ export const icons = [
 export const bios = [
   {
     id: 1,
-    icon: <FaUser />,
-    key: "Name",
-    value: "Haci Cömert",
-  },
-  {
-    id: 2,
     icon: <FaPhoneAlt />,
     key: "Phone",
     value: "+46 72 448 27 91",
   },
   {
-    id: 3,
+    id: 2,
     icon: <FaPaperPlane />,
     key: "Email",
     value: "Haci.Comert@outlook.com",

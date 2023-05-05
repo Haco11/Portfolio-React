@@ -37,6 +37,7 @@ const About = () => {
           whileInView={{ x: [250, 0], opacity: 1 }}
           transition={{ duration: 1 }}
           className="about_right">
+          <h3>Haci Cömert</h3>
           <p>
             As a full-stack developer with a wealth of experience in web
             development, I possess a diverse skill set across various
