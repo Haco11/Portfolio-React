@@ -51,7 +51,7 @@ export const icons = [
   {
     id: 3,
     icon: <FaPhp />,
-    title: "¨PHP",
+    title: "PHP",
   },
   {
     id: 4,
