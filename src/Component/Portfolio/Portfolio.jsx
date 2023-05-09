@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
 import { workImages } from "../../data";
 import { FiEye, FiGithub } from "react-icons/fi";
@@ -7,6 +7,19 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import W from "../../assets/work1.png";
 
 const Portfolio = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleTap = (workId) => {
+    setIsOpen((prevState) => ({
+      ...prevState,
+      [workId]: true,
+    }));
+    setTimeout(() => {
+      setIsOpen((prevState) => ({
+        ...prevState,
+        [workId]: false,
+      }));
+    }, 4000);
+  };
   return (
     <>
       <div className="container" id="portfolio">
@@ -24,6 +37,8 @@ const Portfolio = () => {
           className="workImages">
           {workImages
             .map((work) => {
+              const isImageOpen = isOpen[work.id] || false;
+
               return (
                 <div className="workImage" key={work.id}>
                   <LazyLoadImage
@@ -35,7 +50,9 @@ const Portfolio = () => {
                   <motion.div
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: [0, 0.85] }}
+                    animate={{ opacity: isImageOpen ? 0.85 : 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
+                    onTap={() => handleTap(work.id)}
                     className="hoverLayer">
                     <div className="hoverLayer__icon">
                       <motion.a
@@ -61,8 +78,12 @@ const Portfolio = () => {
                   <div className="portfolio__info">
                     <h4 className="workImage__title">{work.name}</h4>
                     <div className="workImage__tags">
-                      {work.tag.map((r, ind) => {
-                        return <span className="tag">{r}</span>;
+                      {work.tag.map((tags, i) => {
+                        return (
+                          <span key={i} className="tag">
+                            {tags}
+                          </span>
+                        );
                       })}
                     </div>
                   </div>
