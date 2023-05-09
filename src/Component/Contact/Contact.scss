@@ -13,11 +13,16 @@
   .contact_info {
     display: flex;
     flex-wrap: wrap;
+    color: $black;
     gap: 1rem;
     justify-content: space-between;
     @media screen and (max-width: 500px) {
       justify-content: center;
     }
     margin-top: 2rem;
+
+    a {
+      color: $black;
+    }
   }
 }

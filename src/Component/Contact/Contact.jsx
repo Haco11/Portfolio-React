@@ -36,11 +36,11 @@ const Contact = () => {
           </div>
           <div>
             <h3>Mail</h3>
-            <p>Haci.Comert@outlook.com</p>
+            <a href="mailto:haci.comert@outlook.com">Haci.Comert@outlook.com</a>
           </div>
           <div>
             <h3>Phone</h3>
-            <p>+46 72 448 27 91</p>
+            <a href="tel:0724482791">+46 72 448 27 91</a>
           </div>
         </div>
       </motion.div>
