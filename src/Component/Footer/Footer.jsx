@@ -11,7 +11,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="followMe">
-        <h4>Follow Me</h4>
+        <h4>Connect with me</h4>
         <div className="stick"></div>
         <div className="social_icons">
           {socialIcons.map((item, index) => {
