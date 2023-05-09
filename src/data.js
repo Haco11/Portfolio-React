@@ -46,12 +46,12 @@ export const icons = [
   {
     id: 2,
     icon: <FaNodeJs />,
-    title: "NodeJs",
+    title: "Node.js",
   },
   {
     id: 3,
     icon: <FaPhp />,
-    title: "Php",
+    title: "¨PHP",
   },
   {
     id: 4,
@@ -61,12 +61,12 @@ export const icons = [
   {
     id: 5,
     icon: <TbBrandNextjs />,
-    title: "NextJs",
+    title: "Next.js",
   },
   {
     id: 6,
     icon: <TbBrandMongodb />,
-    title: "MongoDb",
+    title: "MongoDB",
   },
   {
     id: 7,
