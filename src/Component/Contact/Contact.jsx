@@ -23,7 +23,7 @@ const Contact = () => {
         whileInView={{ y: [-50, 0], opacity: scrollY >= threshold ? 0 : 1 }}
         className="contact_form">
         <h3>Just Say Hi!</h3>
-        <p>
+        <p className="smaller">
           If you're interested in learning more about my work or collaborating
           on a project, please don't hesitate to get in touch with me. You can
           reach me via email or phone, and I'll be happy to discuss how I can
