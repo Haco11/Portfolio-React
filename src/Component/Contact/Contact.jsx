@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="contact_info">
           <div>
             <h3>Address</h3>
-            <p>Sweden,Stockholm</p>
+            <p>Stockholm, Sweden</p>
           </div>
           <div>
             <h3>Mail</h3>
