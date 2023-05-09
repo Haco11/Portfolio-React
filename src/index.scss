@@ -29,6 +29,7 @@ img {
 }
 
 body {
+  background-blend-mode: color-dodge;
   background-image: url(./assets/cubes.png);
   background-color: $backgroundColor;
 }
