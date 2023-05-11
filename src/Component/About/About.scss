@@ -17,7 +17,7 @@
     max-height: 550px;
     justify-self: center;
     border-radius: 0.5rem;
-    box-shadow: 0 0 20px $cyan;
+    box-shadow: 0 0 0px 4px $cyan;
 
     img {
       object-fit: cover;
@@ -37,7 +37,7 @@
     right: 150px;
     color: #fff;
     background-color: rgba(19, 18, 18, 0.7);
-    box-shadow: 0 0 20px $cyan;
+    box-shadow: 0 0 0px 4px $cyan;
     padding: 2rem;
     border-radius: 0.5rem;
     @media screen and (max-width: 1150px) {
