@@ -23,6 +23,7 @@ import work2 from "./assets/work2.jpg";
 import work3 from "./assets/work3.1.png";
 import work4 from "./assets/work4.jpg";
 import work5 from "./assets/work5.png";
+import work6 from "./assets/work6.jpeg";
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
@@ -168,5 +169,13 @@ export const workImages = [
     github: "https://github.com/Haco11/spotify-clone",
     live: "",
     tag: ["React", "Redux", "Spotify API", "Material UI"],
+  },
+  {
+    id: 5,
+    img: work6,
+    name: "Webshop-Clone",
+    github: "https://github.com/Haco11/webshop-clone",
+    live: "https://webshop-clone.vercel.app/",
+    tag: ["NextJS", "Typescript", "Klarna", "SCSS"],
   },
 ];
