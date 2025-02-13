@@ -17,6 +17,7 @@ import {
   TbBrandGit,
   TbBrandRedux,
   TbBrandMongodb,
+  TbBrandReactNative 
 } from "react-icons/tb";
 
 import work2 from "./assets/work2.jpg";
@@ -98,6 +99,11 @@ export const icons = [
     id: 12,
     icon: <FaFigma />,
     title: "Figma",
+  },
+  {
+    id: 13,
+    icon: <TbBrandReactNative />,
+    title: "React Native",
   },
 ];
 
