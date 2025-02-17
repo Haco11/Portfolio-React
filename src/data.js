@@ -25,6 +25,7 @@ import work3 from "./assets/work3.1.png";
 import work4 from "./assets/work4.jpg";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.jpeg";
+import work7 from './assets/work7.png';
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
@@ -183,5 +184,13 @@ export const workImages = [
     github: "https://github.com/Haco11/webshop-clone",
     live: "https://webshop-clone.vercel.app/",
     tag: ["NextJS", "Typescript", "Klarna", "SCSS"],
+  },
+  {
+    id: 6,
+    img: work7,
+    name: "On-Pitch-Performance",
+    github: "",
+    live: "https://www.onpitchperformance.com/",
+    tag: ["React-Native", "Typescript", "Supabase", "Tailwind", "postgreSQL"],
   },
 ];
