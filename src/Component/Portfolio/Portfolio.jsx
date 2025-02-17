@@ -55,6 +55,7 @@ const Portfolio = () => {
                     onTap={() => handleTap(work.id)}
                     className="hoverLayer">
                     <div className="hoverLayer__icon">
+                    {work.github === "" ? null : (
                       <motion.a
                         href={work.github}
                         whileInView={{ scale: [0, 1] }}
@@ -63,6 +64,8 @@ const Portfolio = () => {
                         target="_blank">
                         <FiGithub />
                       </motion.a>
+                      )}
+
                       {work.live === "" ? null : (
                         <motion.a
                           href={work.live}
