@@ -192,7 +192,7 @@ export const workImages = [
     name: "Pizzaria La Favorita",
     github: "https://github.com/Haco11/pizzaria-la-favorita",
     live: "https://pizzaria-la-favorita.vercel.app/",
-    tag: ["React-Native", "Typescript", "Supabase", "Tailwind", "postgreSQL"],
+    tag: ["React", "Typescript", "SCSS"],
   },
 
   {
