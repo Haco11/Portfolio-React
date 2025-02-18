@@ -26,6 +26,7 @@ import work4 from "./assets/work4.jpg";
 import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.jpeg";
 import work7 from './assets/work7.png';
+import work8 from './assets/work8.png';
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
@@ -187,6 +188,15 @@ export const workImages = [
   },
   {
     id: 6,
+    img: work8,
+    name: "Pizzaria La Favorita",
+    github: "https://github.com/Haco11/pizzaria-la-favorita",
+    live: "https://pizzaria-la-favorita.vercel.app/",
+    tag: ["React-Native", "Typescript", "Supabase", "Tailwind", "postgreSQL"],
+  },
+
+  {
+    id: 8,
     img: work7,
     name: "On-Pitch-Performance",
     github: "",
