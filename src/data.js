@@ -27,6 +27,7 @@ import work5 from "./assets/work5.png";
 import work6 from "./assets/work6.jpeg";
 import work7 from './assets/work7.png';
 import work8 from './assets/work8.png';
+import work9 from './assets/work9.png';
 
 export const navLinks = ["home", "skills", "portfolio", "about", "contact"];
 
@@ -194,7 +195,14 @@ export const workImages = [
     live: "https://pizzaria-la-favorita.vercel.app/",
     tag: ["React", "Typescript", "SCSS"],
   },
-
+  {
+    id: 7,
+    img: work9,
+    name: "Pizzeria Sorrento",
+    github: "https://github.com/Haco11/sorrento",
+    live: "https://pizzeriasorrento.se/",
+    tag: ["NextJS", "Typescript", "Tailwind"],
+  },
   {
     id: 8,
     img: work7,
